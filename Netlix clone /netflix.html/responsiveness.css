@@ -1,0 +1,11 @@
+@media (max-width: 768px) and (min-width: 480px) {
+    .trending-shows {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-container {
+        overflow: auto;
+    }
+} 

@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;    
+    margin: 0; 
+}
+body {
+    font-family: "Open Sans", serif;
+    margin: 0;
+}
+.banner-wrap {
+    background-image: url(./assets/bgimage.jpg);
+    background-size: cover;
+    height: 97vh;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.overlay {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 76%;
+    position: absolute;
+}
+/* this is netflix's logo */
+#icon {
+    width: 160px;   
+}
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    height: 80%; 
+}
+.banner-container p {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    margin: 0px 140px;
+    padding-top: 8px;
+}
+/* this is the heading for the info-container */
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700; 
+    margin: 0 400px 16px 400px;
+}
+.banner-container-h3 {
+    padding-bottom: 12px; 
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 400px 0 400px;
+}
+.info-container {
+   background: black;
+   display: flex;
+   gap: 40px;
+   padding: 0 180px 40px 180px;
+}
+.info-container svg { 
+    color: white;
+}
+.info-container button {
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(38, 37, 37);
+    margin: 120px 0 80px 0px ;
+}
+.info-container button:hover {
+    background-color: rgb(45, 45, 45);
+}
+/* these are the headings for the trending-shows, reasons-block and faq-buttons respectfully */
+.shows-heading, .reasons-heading, .faq {
+    color: white;
+    background-color: black;
+    padding: 40px 148px 20px 148px;
+}
+.trending-shows {
+    position: relative;
+    margin-top: 70px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.shows-heading {
+    position: relative;
+    padding-top: 60px; 
+    background: transparent
+}
+.shows-heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 64px;
+    transform: translateX(-50%);
+    background: radial-gradient(50% 500% at 50% -390%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;;
+    border-top: 4px solid #ff007f;
+    border-top-left-radius: 70% 100%;
+    border-top-right-radius: 70% 100%;
+}
+.trending-shows img {
+    border-radius: 16px;
+}
+.trending-shows:hover {
+    transform: scale(1.1);
+}
+/* this is the styling for the numbers of the trending shows */
+.trending-shows .show {
+    position: absolute;
+    font-size: 90px;
+    font-weight: 700;
+    height: 50px;
+    color: black;
+    text-shadow: 
+        -2px -2px 0 rgb(211 211 211),  
+        2px -2px 0 rgb(211 211 211),  
+        -2px 2px 0 rgb(211 211 211),  
+        2px 2px 0 rgb(211 211 211);
+        left: -20px;
+        bottom: 32px;
+}
+/* these are the sign-up and login email forms */
+#sign-up-email, #login-email {
+    background-color: rgb(0, 0, 0, 0.688);
+    border: 1px solid rgb(94, 94, 94);
+    color: rgb(183, 183, 183);
+    font-size: 16px;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 10px 16px 10px 16px;
+    width: 350.758px;
+}
+#login-email {
+    width: 550px;
+    background-color: rgb(23, 21, 21);
+}
+.get-started-button {
+    display: flex;
+    flex-direction: space;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 590;
+    color: white;
+    margin-left: 6px;
+    padding: 10px 22px 8px 22px;
+    background-color: rgb(229, 9, 20);
+    border-radius: 4px;
+    border: 5px solid rgb(229, 9, 20);
+}
+.sign-in-button {
+    background-color: rgb(229, 9, 20);
+    border: rgb(229, 9, 20);
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+.sign-in-button:hover {
+    cursor: pointer;
+    transition: ease-in-out 0,5s;
+}
+/* this is the sign-in-button link */
+a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(229, 9, 20);
+}
+/* this is the form containers */
+.email-form, .email-address-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer {
+    background-color: black;
+    padding: 80px 148px;
+}
+.footer-links {
+    list-style-type: none;
+    columns: 4;
+    padding: 0;
+    font-size: 14px;
+}
+.footer-links, li {
+    line-height: 2.2;
+}
+.footer ul, .questions-title{
+    margin-top: 36px;
+}
+.footer ul li, .questions-title {
+    color: rgb(177 177 168);
+    text-decoration: underline;
+}
+.footer ul li:hover, .questions-title {
+    color: rgb(177 177 168);
+    cursor: pointer;
+}
+.questions-title {
+    margin-top: 70px;
+    text-decoration: none;
+}
+.questions-title a{
+    background-color: black;
+    color: rgb(177 177 168);
+    text-decoration: underline;
+}
+.language {
+    color: white;
+    height: 20px;
+    width: 54px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(177 177 168);
+    padding: 15px 60px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+.language select {
+    padding: 5px 8px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 16px;
+}
+.reasons-heading {
+    padding-left: 148px;
+    padding-top: 70px;
+}
+/* this is the parent element of the blocks */
+.reasons-block {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    color: white;
+    gap: 16px; 
+    padding: 0px 148px; 
+    max-width: 100%; 
+    background-color: black;
+}
+.block {
+    background-image: linear-gradient(to bottom right, #1a2042, #240e18);
+    position: relative;
+    padding: 24px 16px 0px 16px;
+    border-radius: 18px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left;  
+    flex: 1;
+    height: 300px;
+    min-width: 260px; 
+    max-width: 350px; 
+}
+.block h2 {
+    margin-bottom: 20px;
+}
+.block svg {
+    margin-top: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+}
+.faq-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 148px;
+    background-color: black;
+    gap: 10px;
+}
+.f-button {
+    padding: 26px 24px;
+    text-align: start;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(45, 45, 45);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.f-button svg {
+    position: absolute;
+    right: 180px;
+    width: 50px;
+}
+.ready-to-watch-q {
+   text-align: center;
+   font-size: 16px;
+   font-weight: 400;
+   color: white;
+   background-color: black;
+   padding: 60px 20px 20px 20px;
+}
+.email-address-form {
+    background-color: black;
+}
+.netflix-sa {
+    color: rgb(177 177 168);
+    margin-top: 40px;
+}
