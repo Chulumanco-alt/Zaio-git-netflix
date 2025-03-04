@@ -119,7 +119,7 @@ h1 {
 /* this is the styling for the numbers of the trending shows */
 .trending-shows .show {
     position: absolute;
-    font-size: 90px;
+    font-size: 96px;
     font-weight: 700;
     height: 50px;
     color: black;
@@ -129,7 +129,7 @@ h1 {
         -2px 2px 0 rgb(211 211 211),  
         2px 2px 0 rgb(211 211 211);
         left: -20px;
-        bottom: 32px;
+        bottom: 78px;
 }
 /* these are the sign-up and login email forms */
 #sign-up-email, #login-email {
